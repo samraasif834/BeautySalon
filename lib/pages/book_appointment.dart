@@ -126,7 +126,7 @@ class _BookappointmentState extends State<Bookappointment> {
                               ),
                             ),
                             SizedBox(
-                              width: 140,
+                              width: 100,
                             ),
                             Text(
                               "\$55.00",
@@ -148,7 +148,7 @@ class _BookappointmentState extends State<Bookappointment> {
                               ),
                             ),
                             SizedBox(
-                              width: 250,
+                              width: 210,
                             ),
                             Text(
                               "-\$23.00",
@@ -181,7 +181,7 @@ class _BookappointmentState extends State<Bookappointment> {
                               ),
                             ),
                             SizedBox(
-                              width: 245,
+                              width: 200,
                             ),
                             Text(
                               "\$32.00",
@@ -215,7 +215,7 @@ class _BookappointmentState extends State<Bookappointment> {
                     ),
                   ),
                   SizedBox(
-                    width: 145,
+                    width: 100,
                   ),
                   Container(child: checkbox1()),
                 ],
@@ -238,7 +238,7 @@ class _BookappointmentState extends State<Bookappointment> {
                     ),
                   ),
                   SizedBox(
-                    width: 193,
+                    width: 150,
                   ),
                   Container(child: checkbox1()),
                 ],
@@ -263,7 +263,7 @@ class _BookappointmentState extends State<Bookappointment> {
                       ),
                     ),
                     SizedBox(
-                      width: 170,
+                      width: 125,
                     ),
                     Container(child: checkbox1()),
                   ],
@@ -288,7 +288,7 @@ class _BookappointmentState extends State<Bookappointment> {
                       ),
                     ),
                     SizedBox(
-                      width: 188,
+                      width: 145,
                     ),
                     Container(child: checkbox1()),
                   ],

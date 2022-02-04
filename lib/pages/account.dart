@@ -70,7 +70,7 @@ class _AccountState extends State<Account> {
                         ),
                       ),
                       SizedBox(
-                        width: 160,
+                        width: 120,
                       ),
                       CircleAvatar(
                         backgroundColor: UIData.mainColor,
