@@ -1,6 +1,7 @@
 import 'package:beautysalon/pages/account.dart';
 import 'package:beautysalon/pages/book.dart';
 import 'package:beautysalon/pages/book_appointment.dart';
+import 'package:beautysalon/pages/book_more_appointment.dart';
 import 'package:beautysalon/pages/home.dart';
 import 'package:beautysalon/pages/intro.dart';
 import 'package:beautysalon/uidata.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: IntroPage(),
+      home: Bookmoreappointment(),
       routes: <String, WidgetBuilder>{
         UIData.homePageRoute: (BuildContext context) => HomePage(),
         UIData.introPageRoute: (BuildContext context) => IntroPage(),
