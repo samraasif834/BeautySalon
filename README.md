@@ -1,4 +1,4 @@
-# beautysalon
+# BeautySalon
 
 A new Flutter project.
 
