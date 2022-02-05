@@ -1,8 +1,7 @@
 import 'package:beautysalon/pages/account.dart';
 import 'package:beautysalon/pages/book.dart';
 import 'package:beautysalon/pages/book_appointment.dart';
-import 'package:beautysalon/pages/book_appointment_1.dart';
-import 'package:beautysalon/pages/book_more_appointment.dart';
+import 'package:beautysalon/pages/book_appointment_2.dart';
 import 'package:beautysalon/pages/home.dart';
 import 'package:beautysalon/pages/intro.dart';
 import 'package:beautysalon/uidata.dart';
@@ -11,10 +10,12 @@ import 'package:google_fonts/google_fonts.dart';
 
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Bookapp1(),
+      home: HomePage(),
       routes: <String, WidgetBuilder>{
         UIData.homePageRoute: (BuildContext context) => HomePage(),
         UIData.introPageRoute: (BuildContext context) => IntroPage(),

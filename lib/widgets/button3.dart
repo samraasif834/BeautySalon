@@ -12,7 +12,7 @@ class Button3 extends StatelessWidget {
     final screen_size_height = MediaQuery.of(context).size.height;
     return Container(
       height: screen_size_height * 0.047,
-      width: screen_size_width * 0.94,
+      width: screen_size_width * 0.95,
       child: ElevatedButton(
         onPressed: () {
           // Navigator.of(context).push(MaterialPageRoute(

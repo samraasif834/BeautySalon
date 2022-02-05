@@ -28,7 +28,7 @@ class Bookapp13 extends StatelessWidget {
         ],
         )
         ),
-        SizedBox(height: screen_size_height*0.03,),
+        SizedBox(height: screen_size_height*0.02,),
 
         Container(
           height: screen_size_height*0.05,
@@ -43,7 +43,7 @@ class Bookapp13 extends StatelessWidget {
         child: Row(
         children: [
           Text("   Hair Extensions(micro keratin)"),
-          SizedBox(width: screen_size_width*0.3,),
+           SizedBox(width: screen_size_width*0.34,),
            Icon(Icons.add,color: UIData.mainColor,size: 27,),
         ],
         )
