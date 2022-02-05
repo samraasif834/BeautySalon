@@ -88,6 +88,14 @@ var cardimages = [
   'images/braid3.jpg',
   'images/braid4.jpg'
 ];
+var images = [
+  'images/braid3.jpg',
+  'images/hairdresser.jpg',
+  'images/braid3.jpg',
+  'images/hairdresser.jpg',
+  'images/braid3.jpg',
+  'images/hairdresser.jpg',
+];
 
 var specialistimages = [
   'images/braid2.jpg',

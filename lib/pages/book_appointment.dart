@@ -2,6 +2,7 @@
 
 import 'package:beautysalon/uidata.dart';
 import 'package:beautysalon/widgets/checkbox.dart';
+import 'package:beautysalon/widgets/checkbox1.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';

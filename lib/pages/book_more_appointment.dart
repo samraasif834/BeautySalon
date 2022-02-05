@@ -31,7 +31,7 @@ class _BookmoreappointmentState extends State<Bookmoreappointment> {
             ),
           ),
           title: Padding(
-            padding: const EdgeInsets.only(left: 50),
+            padding: const EdgeInsets.only(left: 30),
             child: Text(
               "Book Appointment",
               style: TextStyle(
@@ -93,7 +93,7 @@ class _BookmoreappointmentState extends State<Bookmoreappointment> {
                       ),
                     ),
                     SizedBox(
-                      width: screen_size_width * 0.17,
+                      width: screen_size_width * 0.12,
                     ),
                     Text(
                       "Payment",
@@ -103,7 +103,7 @@ class _BookmoreappointmentState extends State<Bookmoreappointment> {
                       ),
                     ),
                     SizedBox(
-                      width: screen_size_width * 0.25,
+                      width: screen_size_width * 0.2,
                     ),
                     Text(
                       "Finished",
@@ -193,7 +193,7 @@ class _BookmoreappointmentState extends State<Bookmoreappointment> {
                     ),
                   ),
                   SizedBox(
-                    width: screen_size_width * 0.53,
+                    width: screen_size_width * 0.47,
                   ),
                   Text(
                     "2021.06.02",
@@ -222,7 +222,7 @@ class _BookmoreappointmentState extends State<Bookmoreappointment> {
                     ),
                   ),
                   SizedBox(
-                    width: screen_size_width * 0.5,
+                    width: screen_size_width * 0.4,
                   ),
                   Text(
                     "10:55-11:40",

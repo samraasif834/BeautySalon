@@ -6,15 +6,15 @@ import 'package:getwidget/types/gf_checkbox_type.dart';
 
 import '../uidata.dart';
 
-class checkbox1 extends StatefulWidget {
+class checkbox extends StatefulWidget {
  
-  const checkbox1({ Key? key }) : super(key: key);
+  const checkbox({ Key? key }) : super(key: key);
 
   @override
-  _checkbox1State createState() => _checkbox1State();
+  _checkboxState createState() => _checkboxState();
 }
 
-class _checkbox1State extends State<checkbox1> {
+class _checkboxState extends State<checkbox> {
   @override
   Widget build(BuildContext context) {
     return GFCheckbox(
