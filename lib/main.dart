@@ -32,13 +32,14 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Appointment2(),
+      home: HomePage(),
       routes: <String, WidgetBuilder>{
         UIData.homePageRoute: (BuildContext context) => HomePage(),
         UIData.introPageRoute: (BuildContext context) => IntroPage(),
         UIData.bookPageRoute: (BuildContext context) => BookPage(),
-        UIData.bookappointment:(BuildContext context) =>Bookappointment(),
-        UIData.account:(BuildContext context) =>Account(),
+        UIData.bookappointmentPageRoute:(BuildContext context) =>Bookappointment(),
+        UIData.accountPageRoute:(BuildContext context) =>Account(),
+        UIData.chatPageRoute:(BuildContext context) =>Chat(),
 
       }
     );

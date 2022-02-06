@@ -1,3 +1,7 @@
+
+//Home
+
+
 import 'package:beautysalon/pages/Bottom/bottm.dart';
 import 'package:beautysalon/pages/book.dart';
 import 'package:beautysalon/variable.dart';

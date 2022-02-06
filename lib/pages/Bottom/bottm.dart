@@ -31,11 +31,16 @@ class _NavbarState extends State<Navbar> {
           size: 30,
           color: UIData.mainColor,
         ),
-        Icon(
+
+IconButton(onPressed: (){
+  Navigator.pushNamed(context, UIData.chatPageRoute);
+}, icon:Icon(
           Icons.message,
           size: 30,
           color: UIData.mainColor,
-        ),
+        ), ),
+
+        
         Icon(
           Icons.add,
           size: 30,

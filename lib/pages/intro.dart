@@ -1,3 +1,6 @@
+// splash screen 
+
+
 import 'package:beautysalon/uidata.dart';
 import 'package:beautysalon/widgets/button.dart';
 import 'package:flutter/material.dart';

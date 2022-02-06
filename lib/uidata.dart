@@ -4,8 +4,9 @@ class UIData {
   static const String homePageRoute = "/homePageRoute";
   static const String introPageRoute = "/introPageRoute";
   static const String bookPageRoute = "/bookPageRoute";
-  static const String bookappointment = "/bookappointmentroute";
-    static const String account = "/account";
+  static const String bookappointmentPageRoute = "/bookappointmentroute";
+  static const String accountPageRoute = "/accountPageRoute";
+  static const String chatPageRoute = "/chatPageRoute";
 
 
   //Colors
