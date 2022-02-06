@@ -40,17 +40,22 @@ IconButton(onPressed: (){
           color: UIData.mainColor,
         ), ),
 
-        
-        Icon(
+        IconButton(onPressed: (){
+          Navigator.pushNamed(context, UIData.appointmentPageRoute);
+        }, icon:  Icon(
           Icons.add,
           size: 30,
           color: UIData.mainColor,
-        ),
-        Icon(
+        ),),
+       
+       IconButton(onPressed: (){
+         Navigator.pushNamed(context, UIData.appointment2PageRoute);
+       }, icon:  Icon(
           Icons.favorite,
           color: UIData.mainColor,
           size: 30,
-        ),
+        ),),
+       
         IconButton(
             onPressed: () {
               Navigator.of(context)

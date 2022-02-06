@@ -7,6 +7,9 @@ class UIData {
   static const String bookappointmentPageRoute = "/bookappointmentroute";
   static const String accountPageRoute = "/accountPageRoute";
   static const String chatPageRoute = "/chatPageRoute";
+  static const String appointment1PageRoute = "/appointment1PageRoute";
+  static const String appointment2PageRoute = "/appointment1PageRoute";
+  static const String appointmentPageRoute = "/appointmentPageRoute";
 
 
   //Colors

@@ -101,13 +101,13 @@ class _AppointmentState extends State<Appointment> {
             
                  Positioned(
                    top: 150,
-                   left: 30,
+                   left: 13,
               
                    child: Image.asset('images/logo.png',
                  height: screen_size_height*0.25,
                  )),Positioned(
                    top: 310,
-                   left: 75,
+                   left: 62,
               
                    child: Text("No Appointments",style: TextStyle(
                      color: Colors.black,

@@ -40,6 +40,9 @@ class MyApp extends StatelessWidget {
         UIData.bookappointmentPageRoute:(BuildContext context) =>Bookappointment(),
         UIData.accountPageRoute:(BuildContext context) =>Account(),
         UIData.chatPageRoute:(BuildContext context) =>Chat(),
+         UIData.appointmentPageRoute:(BuildContext context) =>Appointment(),
+          UIData.appointment1PageRoute:(BuildContext context) =>Appointment1(),
+           UIData.appointment2PageRoute:(BuildContext context) =>Appointment2(),
 
       }
     );
