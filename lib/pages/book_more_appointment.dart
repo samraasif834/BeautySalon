@@ -1,6 +1,8 @@
 import 'package:beautysalon/uidata.dart';
+import 'package:beautysalon/widgets/button%206.dart';
 import 'package:beautysalon/widgets/button3.dart';
 import 'package:beautysalon/widgets/button4.dart';
+import 'package:beautysalon/widgets/button7.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
@@ -232,9 +234,9 @@ class _BookmoreappointmentState extends State<Bookmoreappointment> {
                 ]),
               ),
               SizedBox(height: screen_size_height*0.06,),
-              Button3(btname: "Book More Appointment"),
+              Button6(btname: "Book More Appointment"),
               SizedBox(height: screen_size_height*0.03,),
-              button4(btname: "Go to Appointments")
+              Button7(btname: "Go to Appointments")
             ],
           ),
         ));

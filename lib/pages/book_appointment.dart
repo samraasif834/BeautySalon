@@ -1,5 +1,6 @@
 
 
+import 'package:beautysalon/pages/book_more_appointment.dart';
 import 'package:beautysalon/uidata.dart';
 import 'package:beautysalon/widgets/checkbox.dart';
 import 'package:beautysalon/widgets/checkbox1.dart';
@@ -301,8 +302,8 @@ SizedBox(height: 30,),
                       width: screen_size_width * 0.9,
                       child: ElevatedButton(
                         onPressed: () {
-                          // Navigator.of(context).push(MaterialPageRoute(
-                          //     builder: (context) => BookPage()));
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => Bookmoreappointment()));
                         },
                         style: ElevatedButton.styleFrom(
                           primary: UIData.mainColor,

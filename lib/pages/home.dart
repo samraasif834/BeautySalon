@@ -4,6 +4,7 @@
 
 import 'package:beautysalon/pages/Bottom/bottm.dart';
 import 'package:beautysalon/pages/book.dart';
+import 'package:beautysalon/pages/book_appointment_1.dart';
 import 'package:beautysalon/variable.dart';
 import 'package:beautysalon/widgets/button2.dart';
 import 'package:beautysalon/widgets/image_card.dart';
@@ -238,7 +239,7 @@ class _HomePageState extends State<HomePage> {
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => BookPage()));
+                              builder: (context) => Bookapp1()));
                         },
                         style: ElevatedButton.styleFrom(
                           primary: UIData.mainColor,

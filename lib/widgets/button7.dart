@@ -1,11 +1,12 @@
+import 'package:beautysalon/pages/appointment_1.dart';
 import 'package:beautysalon/pages/book_appointment_2.dart';
 import 'package:flutter/material.dart';
 
 import '../uidata.dart';
 
-class button4 extends StatelessWidget {
+class Button7 extends StatelessWidget {
   String btname;
-  button4({Key? key, required this.btname}) : super(key: key);
+  Button7({Key? key, required this.btname}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class button4 extends StatelessWidget {
       child: ElevatedButton(
         onPressed: () {
           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => Bookapp2()));
+                              builder: (context) => Appointment1()));
         },
         style: ElevatedButton.styleFrom(
           primary: Colors.white,

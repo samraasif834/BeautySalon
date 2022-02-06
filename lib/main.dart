@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        home: Bookmoreappointment(),
+        home: IntroPage(),
         routes: <String, WidgetBuilder>{
           UIData.homePageRoute: (BuildContext context) => HomePage(),
           UIData.introPageRoute: (BuildContext context) => IntroPage(),
@@ -44,7 +44,13 @@ class MyApp extends StatelessWidget {
           UIData.appointment1PageRoute: (BuildContext context) =>
               Appointment1(),
           UIData.appointment2PageRoute: (BuildContext context) =>
-              Appointment2(),
+              Appointment2(),    
+          UIData.bookappointment1PageRoute: (BuildContext context) =>
+              Bookapp1(),
+          UIData.bookappointment2PageRoute: (BuildContext context) =>
+              Bookapp2(),
+              UIData.bookmoreappointmentPageRoute: (BuildContext context) =>
+              Bookmoreappointment(),    
         });
   }
 }

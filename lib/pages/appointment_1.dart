@@ -20,9 +20,13 @@ class _Appointment1State extends State<Appointment1> {
     final screen_size_height = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: UIData.mainColor,
-        leading: Icon(Icons.arrow_back),
-      ),
+          backgroundColor: UIData.mainColor,
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(Icons.arrow_back),
+          )),
       body: Column(children: [
         Center(
           child: Container(
@@ -39,26 +43,35 @@ class _Appointment1State extends State<Appointment1> {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
-
-             SizedBox(
-                height: screen_size_height * 0.04,
-              ),
-          Container(
-            margin: EdgeInsets.only(top: 8,left: 15),
-            child: Bookapp11(name: "Childrens\'s Cut & Style", min: "30 min", money: '22.00\$')
-          ),
-          SizedBox(height:screen_size_height*0.02 ,),
-          Container(
-            margin: EdgeInsets.only(top: 8,left: 15),
-            child: Bookapp11(name: "Cut & Blow Dry/Ladies", min: "45 min", money: '55.00\$')
-          ),
-          SizedBox(height:screen_size_height*0.02 ,),
-            Container(
-            margin: EdgeInsets.only(top: 8,left: 15),
-            child: Bookapp12(name: "Men\'s Cut", min: "45 min", money: '55.00\$')
-          ),
-           SizedBox(height: screen_size_height*0.03,),
-          Button3(btname: "Book Appointment")
+        SizedBox(
+          height: screen_size_height * 0.04,
+        ),
+        Container(
+            margin: EdgeInsets.only(top: 8, left: 15),
+            child: Bookapp11(
+                name: "Childrens\'s Cut & Style",
+                min: "30 min",
+                money: '22.00\$')),
+        SizedBox(
+          height: screen_size_height * 0.02,
+        ),
+        Container(
+            margin: EdgeInsets.only(top: 8, left: 15),
+            child: Bookapp11(
+                name: "Cut & Blow Dry/Ladies",
+                min: "45 min",
+                money: '55.00\$')),
+        SizedBox(
+          height: screen_size_height * 0.02,
+        ),
+        Container(
+            margin: EdgeInsets.only(top: 8, left: 15),
+            child:
+                Bookapp12(name: "Men\'s Cut", min: "45 min", money: '55.00\$')),
+        SizedBox(
+          height: screen_size_height * 0.03,
+        ),
+        Button3(btname: "Book Appointment")
       ]),
     );
   }

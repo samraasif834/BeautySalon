@@ -10,6 +10,7 @@ import 'package:beautysalon/widgets/book_app13.dart';
 import 'package:beautysalon/widgets/book_app15.dart';
 import 'package:beautysalon/widgets/book_app16.dart';
 import 'package:beautysalon/widgets/button3.dart';
+import 'package:beautysalon/widgets/button5.dart';
 import 'package:beautysalon/widgets/date.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -167,7 +168,7 @@ class _Bookapp2State extends State<Bookapp2> {
             child: Bookapp13(),
           ),
     SizedBox(height: screen_size_height*0.03,),
-          Button3(btname: "Book Your Appointment")
+          Button5(btname: "Book Your Appointment")
           ],
         ),
       ),

@@ -26,11 +26,13 @@ class _NavbarState extends State<Navbar> {
       height: 55,
       // index: index,
       items: [
-        Icon(
+       IconButton(onPressed: (){
+  Navigator.pushNamed(context, UIData.homePageRoute);
+}, icon:Icon(
           Icons.home,
           size: 30,
           color: UIData.mainColor,
-        ),
+        ), ),
 
 IconButton(onPressed: (){
   Navigator.pushNamed(context, UIData.chatPageRoute);
