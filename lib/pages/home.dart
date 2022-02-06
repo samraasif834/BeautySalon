@@ -4,6 +4,7 @@ import 'package:beautysalon/variable.dart';
 import 'package:beautysalon/widgets/button2.dart';
 import 'package:beautysalon/widgets/image_card.dart';
 import 'package:beautysalon/widgets/my_column.dart';
+import 'package:beautysalon/widgets/our_works.dart';
 import 'package:beautysalon/widgets/sidebar.dart';
 import 'package:beautysalon/widgets/specialist_column.dart';
 import 'package:flutter/material.dart';
@@ -117,7 +118,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                         );
                       })
-
+      
                   ),
               SizedBox(height: 15),
               Row(
@@ -330,30 +331,42 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-        )
+        ),
+    
       ],
-    );
+        );
                   })
                   
-                  
-                  //  ListView(
-                    // scrollDirection: Axis.horizontal,
-                  //   children: <Widget>[
-                  //     SpecialistColumn(
-                  //         specImg: "images/braid2.jpg", specName: "Anny Roy"),
-                  //     SizedBox(width: 12),
-                  //     SpecialistColumn(
-                  //         specImg: "images/profile.jpg", specName: "Joy Roy"),
-                  //     SizedBox(width: 12),
-                  //     SpecialistColumn(
-                  //         specImg: "images/braid3.jpg",
-                  //         specName: "Patience Roy"),
-                  //   ],
-                  // )
-                  )
+                
+                  ),
+                  Row(
+                    children: [
+                      Text("Our Works",
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.w600)),
+                    ],
+                  ),
+                  SizedBox(height: screen_size_height*0.02,),
+                 
+                 Container(
+                   child:Ourworks(img1: 'images/1.jpg', img2: 'images/2.jpg', name1: 'Stylist', name2: 'HairDresser')
+                 ),
+                 SizedBox(height: screen_size_height*0.02,),
+                 Container(
+                   child:Ourworks(img1: 'images/3.jpg', img2: 'images/4.jpg', name1: 'Stylist', name2: 'HairDresser')
+                 ),
+                  SizedBox(height: screen_size_height*0.02,),
+                 Container(
+                   child:Ourworks(img1: 'images/3.jpg', img2: 'images/4.jpg', name1: 'Stylist', name2: 'HairDresser')
+                 )
             ],
           ),
+          
+             
         ),
+         
       ),
       drawer: Drawer(
           child: Column(children: [
