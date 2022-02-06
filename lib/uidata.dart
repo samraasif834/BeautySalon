@@ -10,7 +10,10 @@ class UIData {
   static const String appointment1PageRoute = "/appointment1PageRoute";
   static const String appointment2PageRoute = "/appointment1PageRoute";
   static const String appointmentPageRoute = "/appointmentPageRoute";
-
+  static const String bookappointment1PageRoute = "/bookappointment1PageRoute";
+  static const String bookappointment2PageRoute = "/ookappointment2PageRoute";
+  static const String bookmoreappointmentPageRoute =
+      "/bookmoreappointmentPageRoute";
 
   //Colors
   static const Color mainColor = Color.fromRGBO(241, 118, 138, 1);
