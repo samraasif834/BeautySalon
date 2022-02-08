@@ -25,7 +25,7 @@ class Bookapp12 extends StatelessWidget {
 fontWeight: FontWeight.w500,
 
         ),),
-        SizedBox(width: screen_size_width*0.44,),
+        SizedBox(width: screen_size_width*0.42,),
         Text(min ,style: TextStyle(
           color: UIData.mainColor,
 fontWeight: FontWeight.bold,

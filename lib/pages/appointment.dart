@@ -62,21 +62,27 @@ class _AppointmentState extends State<Appointment> {
               margin:EdgeInsets.only(top: 10),
               child: Row(
                 children: [
-                  SizedBox(width: screen_size_width*0.1,),
-                  Text('Upcoming',style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 16,
-                  ),),
-                   SizedBox(width: screen_size_width*0.16),
-                  Text("Completed",style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 16,
-                  ),),
-                     SizedBox(width: screen_size_width*0.17,),
-                  Text("Canceled",style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 16,
-                  ),),
+                  SizedBox(width: screen_size_width*0.05,),
+                  Expanded(
+                    child: Text('Upcoming',style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 16,
+                    ),),
+                  ),
+                   SizedBox(width: screen_size_width*0.1),
+                  Expanded(
+                    child: Text("Completed",style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 16,
+                    ),),
+                  ),
+                     SizedBox(width: screen_size_width*0.15,),
+                  Expanded(
+                    child: Text("Canceled",style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 16,
+                    ),),
+                  ),
                 ],
               ),
               
@@ -92,34 +98,45 @@ class _AppointmentState extends State<Appointment> {
                 ),
             ),
             ),
+SizedBox(height: screen_size_height*0.18,),
+           Container(
+              height: screen_size_height * 0.15,
+              width: screen_size_width * 0.42,
+                      decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(20)),
+              image: DecorationImage(
+                  image: AssetImage('images/logo.png'), fit: BoxFit.cover)),
+             
+            ),
 
-            Container(
-                   height:screen_size_height*0.4,
-                   width: screen_size_width*0.5,
-             child: Stack(
-               children: [
-            
-                 Positioned(
-                   top: 150,
-                   left: 13,
+            Text("No Appointments",style: TextStyle(
+                   color: Colors.black,
+                   fontWeight: FontWeight.bold,
+                 ),)
+
+            // Container(
+            //        height:screen_size_height*0.4,
+            //        width: screen_size_width*0.5,
+           
               
-                   child: Image.asset('images/logo.png',
-                 height: screen_size_height*0.25,
-                 )),Positioned(
-                   top: 310,
-                   left: 62,
-              
-                   child: Text("No Appointments",style: TextStyle(
-                     color: Colors.black,
-                     fontWeight: FontWeight.bold,
-                   ),))
+            //        child: Column(
+            //          children: [
+            //            Image.asset('images/logo.png',
+            //     //  height: screen_size_height*0.25,
+            //      ),
+                //  Text("No Appointments",style: TextStyle(
+                //    color: Colors.black,
+                //    fontWeight: FontWeight.bold,
+                //  ),)
+            //          ],
+            //        )),
                ],
              ),
-            )
-          ],
-        )
-      ),
-      bottomNavigationBar: Navbar(),
-    );
+            ),
+            bottomNavigationBar: Navbar(),
+         
+      );
+      
+   
   }
 }

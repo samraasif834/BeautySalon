@@ -32,9 +32,9 @@ class Ourworks extends StatelessWidget {
                   image: AssetImage(img1), fit: BoxFit.cover)),
              
             ),
-            SizedBox(height: screen_size_height*0.01,),
+            SizedBox(height:10,),
             Container(
-              height: screen_size_height * 0.04,
+              height: 32,
               width: screen_size_width * 0.4,
               decoration: BoxDecoration(
                   color: UIData.mainColor,
@@ -46,7 +46,7 @@ class Ourworks extends StatelessWidget {
            
               child: 
             Padding(
-              padding: const EdgeInsets.only(left: 60,top: 5),
+              padding: const EdgeInsets.only(left: 55,top: 5),
               child: Text(name1,style: 
               TextStyle(
                 color:Colors.white,
@@ -55,7 +55,7 @@ class Ourworks extends StatelessWidget {
             ))
           ],
         ),
-        SizedBox(width: screen_size_width*0.05,),
+        SizedBox(width: 15,),
         Column(
           children: [
             Container(
@@ -68,7 +68,7 @@ class Ourworks extends StatelessWidget {
             ),
            SizedBox(height: screen_size_height*0.01,),
             Container(
-              height: screen_size_height * 0.04,
+              height: 32,
               width: screen_size_width * 0.4,
               decoration: BoxDecoration(
                   color: UIData.mainColor,
@@ -80,7 +80,7 @@ class Ourworks extends StatelessWidget {
            
               child: 
             Padding(
-              padding: const EdgeInsets.only(left: 50,top: 5),
+              padding: const EdgeInsets.only(left: 40,top: 5),
               child: Text(name2,style: 
               TextStyle(
                 color:Colors.white,

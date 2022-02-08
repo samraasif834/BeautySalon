@@ -18,28 +18,30 @@ class Bookapp11 extends StatelessWidget {
   Widget build(BuildContext context) {
     final screen_size_width = MediaQuery.of(context).size.width;
     final screen_size_height = MediaQuery.of(context).size.height;
-    return Row(
-      children: [
-        Text(name,style: TextStyle(
-          color: Colors.black,
-fontWeight: FontWeight.w500,
-
-        ),),
-        SizedBox(width: screen_size_width*0.25,),
-        Text(min, style: TextStyle(
-          color: UIData.mainColor,
-fontWeight: FontWeight.bold,
-
-        ),),
-        SizedBox(width: screen_size_width*0.03,),
-        Text(money ,style: TextStyle(
-          color: Colors.grey,
-fontWeight: FontWeight.bold,
-
-        ),),
-        SizedBox(width: screen_size_width*0.03,),
-        checkbox1(),
-      ],
+    return Expanded(
+      child: Row(
+        children: [
+          Text(name,style: TextStyle(
+            color: Colors.black,
+    fontWeight: FontWeight.w500,
+    
+          ),),
+          SizedBox(width: screen_size_width*0.18,),
+          Text(min, style: TextStyle(
+            color: UIData.mainColor,
+    fontWeight: FontWeight.bold,
+    
+          ),),
+          SizedBox(width: screen_size_width*0.03,),
+          Text(money ,style: TextStyle(
+            color: Colors.grey,
+    fontWeight: FontWeight.bold,
+    
+          ),),
+          SizedBox(width: screen_size_width*0.03,),
+          checkbox1(),
+        ],
+      ),
     );
   }
 }

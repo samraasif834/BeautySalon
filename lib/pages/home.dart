@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
               SizedBox(
-                height: 15,
+                height: 50,
               ),
               Container(
                   height: screen_size_height * .2,
@@ -117,8 +117,10 @@ class _HomePageState extends State<HomePage> {
                                     fontSize: 18,
                                   )),
                               SizedBox(height: 15),
-                              MyButton2(
-                                  btnText: "GET UPTO 50% OFF", onpressed: () {})
+                              Expanded(
+                                child: MyButton2(
+                                    btnText: "GET UPTO 50% OFF", onpressed: () {}),
+                              )
                             ],
                           ),
                         );
