@@ -49,7 +49,7 @@ class _AccountState extends State<Account> {
             Align(
               child: Container(
                 margin: EdgeInsets.only(top: 15),
-                height: screen_size_height * 0.15,
+                height: screen_size_height * 0.16,
                 width: screen_size_width * 0.96,
                 child: Card(
                   shape: RoundedRectangleBorder(
@@ -59,18 +59,18 @@ class _AccountState extends State<Account> {
                   child: Row(
                     children: [
                       SizedBox(
-                        width: 40,
+                        width: 25,
                       ),
                       CircleAvatar(
                         radius: 45,
                         backgroundColor: UIData.mainColor,
                         child: CircleAvatar(
-                          radius: 40,
+                          radius: 30,
                           backgroundImage: AssetImage('images/avator.png'),
                         ),
                       ),
                       SizedBox(
-                        width: 120,
+                        width: 80,
                       ),
                       CircleAvatar(
                         backgroundColor: UIData.mainColor,

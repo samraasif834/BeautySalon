@@ -29,6 +29,7 @@ class _HomePageState extends State<HomePage> {
     final screen_size_width = MediaQuery.of(context).size.width;
     final screen_size_height = MediaQuery.of(context).size.height;
     return Scaffold(
+      
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -85,10 +86,10 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
               SizedBox(
-                height: 50,
+                height: 10,
               ),
               Container(
-                  height: screen_size_height * .2,
+                  height: screen_size_height * .25,
                   width: screen_size_width,
                   child: ListView.builder(
                       itemCount: cardimages.length,
@@ -117,10 +118,8 @@ class _HomePageState extends State<HomePage> {
                                     fontSize: 18,
                                   )),
                               SizedBox(height: 15),
-                              Expanded(
-                                child: MyButton2(
-                                    btnText: "GET UPTO 50% OFF", onpressed: () {}),
-                              )
+                              MyButton2(
+                                  btnText: "GET UPTO 50% OFF", onpressed: () {})
                             ],
                           ),
                         );
@@ -377,28 +376,35 @@ class _HomePageState extends State<HomePage> {
       ),
       drawer: Drawer(
           child: Column(children: [
-        Container(
-          color: UIData.mainColor,
-          height: 150,
-          width: 310,
-          child: DrawerHeader(
-            decoration: BoxDecoration(color: UIData.mainColor),
-            child: ListTile(
-              tileColor: UIData.mainColor,
-              leading: CircleAvatar(
-                backgroundColor: Colors.white,
-                backgroundImage: AssetImage('images/avator.png'),
-              ),
-              title: Text(
-                "Username@gmail.com",
-                style: TextStyle(color: Colors.black),
+        Stack(
+          children: [
+         Container(
+            color: UIData.mainColor,
+            height: 150,
+            width: 310,
+            child: DrawerHeader(
+              decoration: BoxDecoration(color: UIData.mainColor),
+              child: ListTile(
+                tileColor: UIData.mainColor,
+                leading: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  backgroundImage: AssetImage('images/avator.png'),
+                ),
+                title: Text(
+                  "Username@gmail.com",
+                  style: TextStyle(color: Colors.black),
+                ),
               ),
             ),
+        
           ),
+            ],
         ),
-        Container(
-          height: screen_size_height * 0.8,
-          child: Sidebar(),
+        Flexible(
+          child: Container(
+            height: screen_size_height * 0.8,
+            child: Sidebar(),
+          ),
         ),
       ])),
       bottomNavigationBar: Navbar(),

@@ -56,37 +56,29 @@ class _Appointment2State extends State<Appointment2> {
             child: Row(
               children: [
                 SizedBox(
-                  width: screen_size_width * 0.05,
+                  width: 20,
                 ),
-                Expanded(
-                  child: Text(
-                    'Upcoming',
-                    style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 16,
-                    ),
+                Text(
+                  'Upcoming',
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 16,
                   ),
                 ),
-                SizedBox(width: screen_size_width * 0.1),
-                Expanded(
-                  child: Text(
-                    "Completed",
-                    style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 16,
-                    ),
+                SizedBox(width:5),
+                Text(
+                  "Completed",
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 16,
                   ),
                 ),
-                SizedBox(
-                  width: screen_size_width * 0.15,
-                ),
-                Expanded(
-                  child: Text(
-                    "Canceled",
-                    style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 16,
-                    ),
+                 SizedBox(width:7),
+                Text(
+                  "Canceled",
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 16,
                   ),
                 ),
               ],
@@ -112,7 +104,7 @@ class _Appointment2State extends State<Appointment2> {
                   return Align(
                       child: Container(
                     margin: EdgeInsets.only(top: 20),
-                    height: screen_size_height * 0.3,
+                    height: screen_size_height * 0.43,
                     width: screen_size_width * 0.95,
                     child: Card(
                       shape: RoundedRectangleBorder(
@@ -187,52 +179,48 @@ class _Appointment2State extends State<Appointment2> {
                           SizedBox(
                             height: 10,
                           ),
-                          Expanded(
-                            child: Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 7),
-                                  child: Text(
-                                    "Children's Cut & Style",
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 16),
-                                  ),
+                          Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(left: 7),
+                                child: Text(
+                                  "Children's Cut & Style",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16),
                                 ),
-                                SizedBox(
-                                  width: screen_size_width * 0.23,
-                                ),
-                                Text(
-                                  "2021.06.01",
-                                  style: TextStyle(fontSize: 15),
-                                ),
-                              ],
-                            ),
+                              ),
+                              SizedBox(
+                                width: screen_size_width * 0.15,
+                              ),
+                              Text(
+                                "2021.06.01",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                            ],
                           ),
                           SizedBox(
-                            height: 10,
+                            height:5,
                           ),
-                          Expanded(
-                            child: Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 7),
-                                  child: Text(
-                                    "Your Time:",
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 16),
-                                  ),
+                          Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(left: 7),
+                                child: Text(
+                                  "Your Time:",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16),
                                 ),
-                                SizedBox(
-                                  width: screen_size_width * 0.43,
-                                ),
-                                Text(
-                                  "12:40-13:10",
-                                  style: TextStyle(fontSize: 15),
-                                ),
-                              ],
-                            ),
+                              ),
+                              SizedBox(
+                                width: screen_size_width * 0.39,
+                              ),
+                              Text(
+                                "12:40-13:10",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                            ],
                           ),
                           SizedBox(
                             height: 10,
@@ -246,15 +234,15 @@ class _Appointment2State extends State<Appointment2> {
                             ),
                           ),
                           SizedBox(
-                            height: 10,
+                            height: 5,
                           ),
                           Row(
                             children: [
                               SizedBox(
-                                width: 40,
+                                width: 30,
                               ),
                               Container(
-                                  height: screen_size_height * 0.047,
+                                  height:23,
                                   width: screen_size_width * 0.3,
                                   child: ElevatedButton(
                                       onPressed: () {},
@@ -266,10 +254,10 @@ class _Appointment2State extends State<Appointment2> {
                                       ),
                                       child: Text("Cancel"))),
                               SizedBox(
-                                width: 60,
+                                width: 40,
                               ),
                               Container(
-                                  height: screen_size_height * 0.047,
+                                  height: 23,
                                   width: screen_size_width * 0.3,
                                   child: ElevatedButton(
                                       onPressed: () {},

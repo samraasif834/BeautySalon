@@ -7,8 +7,10 @@ class Sidebar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 100,
+     final screen_size_width = MediaQuery.of(context).size.width;
+    final screen_size_height = MediaQuery.of(context).size.height;
+    return Container(
+      height: screen_size_height*1,
       child: ListView.builder(
           itemCount: sidebar.length,
           itemBuilder: (context, index) {
