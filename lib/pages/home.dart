@@ -376,37 +376,33 @@ class _HomePageState extends State<HomePage> {
       ),
       drawer: Drawer(
           child: Column(children: [
-        Stack(
-          children: [
-         Container(
-            color: UIData.mainColor,
-            height: 150,
-            width: 310,
-            child: DrawerHeader(
-              decoration: BoxDecoration(color: UIData.mainColor),
-              child: ListTile(
-                tileColor: UIData.mainColor,
-                leading: CircleAvatar(
-                  backgroundColor: Colors.white,
-                  backgroundImage: AssetImage('images/avator.png'),
-                ),
-                title: Text(
-                  "Username@gmail.com",
-                  style: TextStyle(color: Colors.black),
-                ),
-              ),
-            ),
-        
-          ),
-            ],
-        ),
-        Flexible(
+                Container(
+           color: UIData.mainColor,
+           height: 150,
+           width: 310,
+           child: DrawerHeader(
+             decoration: BoxDecoration(color: UIData.mainColor),
+             child: ListTile(
+               tileColor: UIData.mainColor,
+               leading: CircleAvatar(
+                 backgroundColor: Colors.white,
+                 backgroundImage: AssetImage('images/avator.png'),
+               ),
+               title: Text(
+                 "Username@gmail.com",
+                 style: TextStyle(color: Colors.black),
+               ),
+             ),
+           ),
+                
+                 ),
+                Flexible(
           child: Container(
             height: screen_size_height * 0.8,
             child: Sidebar(),
           ),
-        ),
-      ])),
+                ),
+              ])),
       bottomNavigationBar: Navbar(),
     );
   }

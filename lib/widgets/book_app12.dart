@@ -18,28 +18,39 @@ class Bookapp12 extends StatelessWidget {
   Widget build(BuildContext context) {
     final screen_size_width = MediaQuery.of(context).size.width;
     final screen_size_height = MediaQuery.of(context).size.height;
-    return Row(
-      children: [
-        Text(name,style: TextStyle(
-          color: Colors.black,
+    return Container(
+      height: screen_size_height*0.05,
+      width: screen_size_width,
+           color: Colors.transparent,
+      child: Row(
+        children: [
+          Text(name,
+           maxLines: 1,
+           overflow: TextOverflow.ellipsis,
+          style: TextStyle(
+            color: Colors.black,
 fontWeight: FontWeight.w500,
+ fontSize: screen_size_width*0.03,
 
-        ),),
-        SizedBox(width: screen_size_width*0.42,),
-        Text(min ,style: TextStyle(
-          color: UIData.mainColor,
+          ),),
+          SizedBox(width: screen_size_width*0.58,),
+          Text(min ,style: TextStyle(
+            color: UIData.mainColor,
 fontWeight: FontWeight.bold,
+ fontSize: screen_size_width*0.02
 
-        ),),
-        SizedBox(width: screen_size_width*0.03,),
-        Text(money,style: TextStyle(
-          color: Colors.grey,
+          ),),
+          SizedBox(width: screen_size_width*0.03,),
+          Text(money,style: TextStyle(
+            color: Colors.grey,
 fontWeight: FontWeight.bold,
+fontSize: screen_size_width*0.02
 
-        ),),
-        SizedBox(width: screen_size_width*0.03,),
-        checkbox1(),
-      ],
+          ),),
+          SizedBox(width: screen_size_width*0.03,),
+          checkbox1(),
+        ],
+      ),
     );
   }
 }

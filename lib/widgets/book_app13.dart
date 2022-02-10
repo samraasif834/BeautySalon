@@ -11,7 +11,7 @@ class Bookapp13 extends StatelessWidget {
     return Column(
       children: [
         Container(
-          height: screen_size_height*0.05,
+          height: 25,
           width: screen_size_width*0.96,
         
         decoration: BoxDecoration(
@@ -22,8 +22,8 @@ class Bookapp13 extends StatelessWidget {
         ),
         child: Row(
         children: [
-          Expanded(child: Text("   Colouring")),
-          SizedBox(width: screen_size_width*0.66,),
+          Text("   Colouring"),
+          SizedBox(width: screen_size_width*0.6,),
           Icon(Icons.add,color: UIData.mainColor,size: 27,),
         ],
         )
@@ -31,7 +31,7 @@ class Bookapp13 extends StatelessWidget {
         SizedBox(height: screen_size_height*0.02,),
 
         Container(
-          height: screen_size_height*0.05,
+          height: 25,
           width: screen_size_width*0.96,
         
         decoration: BoxDecoration(
@@ -42,8 +42,8 @@ class Bookapp13 extends StatelessWidget {
         ),
         child: Row(
         children: [
-          Expanded(child: Text("   Hair Extensions(micro keratin)")),
-           SizedBox(width: screen_size_width*0.3,),
+          Text("   Hair Extensions(micro keratin)"),
+           SizedBox(width: screen_size_width*0.2,),
            Icon(Icons.add,color: UIData.mainColor,size: 27,),
         ],
         )
