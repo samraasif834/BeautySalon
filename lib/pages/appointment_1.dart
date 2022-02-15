@@ -4,6 +4,8 @@ import 'package:beautysalon/widgets/book_app12.dart';
 import 'package:beautysalon/widgets/button3.dart';
 import 'package:flutter/material.dart';
 
+import 'Bottom/bottm.dart';
+
 //ss 11
 
 class Appointment1 extends StatefulWidget {
@@ -73,6 +75,7 @@ class _Appointment1State extends State<Appointment1> {
         ),
         Button3(btname: "Book Appointment")
       ]),
+      bottomNavigationBar: Navbar(),
     );
   }
 }

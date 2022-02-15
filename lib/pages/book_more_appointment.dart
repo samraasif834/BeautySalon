@@ -1,3 +1,4 @@
+import 'package:beautysalon/pages/Bottom/bottm.dart';
 import 'package:beautysalon/uidata.dart';
 import 'package:beautysalon/widgets/button%206.dart';
 import 'package:beautysalon/widgets/button3.dart';
@@ -239,6 +240,8 @@ class _BookmoreappointmentState extends State<Bookmoreappointment> {
               Button7(btname: "Go to Appointments")
             ],
           ),
-        ));
+        ),
+        bottomNavigationBar: Navbar(),
+        );
   }
 }

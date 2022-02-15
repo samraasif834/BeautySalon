@@ -1,11 +1,14 @@
-// splash screen 
+// splash screen
 
+import 'dart:async';
 
+import 'package:beautysalon/pages/home.dart';
+import 'package:beautysalon/pages/home_page1.dart';
+import 'package:beautysalon/pages/login.dart';
 import 'package:beautysalon/uidata.dart';
 import 'package:beautysalon/widgets/button.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
-
 
 class IntroPage extends StatefulWidget {
   @override
@@ -14,6 +17,14 @@ class IntroPage extends StatefulWidget {
 
 class _IntroPageState extends State<IntroPage> {
   @override
+
+  // void initState() {
+  //   super.initState();
+  //   Timer(Duration(seconds: 4), () {
+  //     Navigator.of(context)
+  //         .push(MaterialPageRoute(builder: (context) => Homepage1()));
+  //   });
+  // }
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
@@ -46,8 +57,29 @@ class _IntroPageState extends State<IntroPage> {
               textAlign: TextAlign.center,
               style: TextStyle(height: 1.8, letterSpacing: 1.3),
             ),
-            MyButton(btnText: "Get Started",
-            onpressed: () => Navigator.pushNamed(context, UIData.homePageRoute)),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Login()));
+
+                // Navigator.of(context).push(MaterialPageRoute(
+                //     builder: (context) => Homepage1()));
+              },
+              style: ElevatedButton.styleFrom(
+                primary: UIData.mainColor,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(9)),
+              ),
+              child: Text(
+                "Get Started",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
+              ),
+            ),
+            // MyButton(btnText: "Get Started",
+            // onpressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage(),))),
           ],
         ),
       ),

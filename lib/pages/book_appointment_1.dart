@@ -1,6 +1,7 @@
 //ss 1
 
 
+import 'package:beautysalon/pages/Bottom/bottm.dart';
 import 'package:beautysalon/pages/book_appointment.dart';
 import 'package:beautysalon/widgets/book_app11.dart';
 import 'package:beautysalon/widgets/book_app12.dart';
@@ -101,6 +102,7 @@ class _Bookapp1State extends State<Bookapp1> {
               child: button4(btname: "Book Your Appointment")),
           ],),
         ),
+        bottomNavigationBar: Navbar(),
     );
   }
 }
