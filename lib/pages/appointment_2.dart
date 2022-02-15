@@ -9,92 +9,132 @@ class Appointment2 extends StatefulWidget {
   _Appointment2State createState() => _Appointment2State();
 }
 
-class _Appointment2State extends State<Appointment2> {
+class _Appointment2State extends State<Appointment2> with SingleTickerProviderStateMixin{
+
   @override
+  late TabController controller;
+  @override
+  void initState() {
+    super.initState();
+
+    controller = TabController(length: 3, vsync: this);
+    controller.addListener(() {
+      setState(() {});
+    });
+  }
+
+  void dispose() {
+    controller.dispose();
+
+    super.dispose();
+  }
   Widget build(BuildContext context) {
     final screen_size_width = MediaQuery.of(context).size.width;
     final screen_size_height = MediaQuery.of(context).size.height;
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: UIData.mainColor,
-        leading: Icon(
+      // appBar: AppBar(
+      //   elevation: 0,
+      //   backgroundColor: UIData.mainColor,
+      //   leading: Icon(
+      //     Icons.menu,
+      //     color: UIData.lightColor,
+      //   ),
+      //   title: Padding(
+      //     padding: const EdgeInsets.only(right: 5),
+      //     child: Center(
+      //       child: Text(
+      //         "Appointment",
+      //         style: TextStyle(color: UIData.lightColor),
+      //       ),
+      //     ),
+      //   ),
+      //   actions: [
+      //     Padding(
+      //       padding: const EdgeInsets.only(right: 15),
+      //       child: Icon(
+      //         Icons.messenger_outline,
+      //         color: UIData.lightColor,
+      //       ),
+      //     ),
+      //     Padding(
+      //       padding: const EdgeInsets.only(right: 10),
+      //       child: Icon(
+      //         Icons.calendar_today,
+      //         color: UIData.lightColor,
+      //       ),
+      //     ),
+      //   ],
+      // ),
+
+             appBar: AppBar(
+    backgroundColor: UIData.mainColor,
+     leading: Icon(
           Icons.menu,
           color: UIData.lightColor,
         ),
-        title: Padding(
-          padding: const EdgeInsets.only(right: 5),
-          child: Center(
-            child: Text(
-              "Appointment",
-              style: TextStyle(color: UIData.lightColor),
+          title: Text("Appointment"),
+          centerTitle: true,
+          bottom: TabBar(controller: controller, tabs: [
+            Tab(
+              text: "Upcoming",
             ),
-          ),
+            Tab(
+              text: "Completed",
+            ),
+            Tab(
+              text: "Canceled",
+            )
+          ]),
         ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 15),
-            child: Icon(
-              Icons.messenger_outline,
-              color: UIData.lightColor,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right: 10),
-            child: Icon(
-              Icons.calendar_today,
-              color: UIData.lightColor,
-            ),
-          ),
-        ],
-      ),
-      body: SingleChildScrollView(
+      body:
+      
+       SingleChildScrollView(
           child: Column(
         children: [
-          Container(
-            margin: EdgeInsets.only(top: 10),
-            child: Row(
-              children: [
-                SizedBox(
-                  width: 20,
-                ),
-                Text(
-                  'Upcoming',
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 16,
-                  ),
-                ),
-                SizedBox(width:5),
-                Text(
-                  "Completed",
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 16,
-                  ),
-                ),
-                 SizedBox(width:7),
-                Text(
-                  "Canceled",
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 16,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Container(
-            margin: EdgeInsets.only(right: 260),
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10.0),
-              child: Container(
-                height: screen_size_height * 0.002,
-                width: screen_size_width * 0.4,
-                color: UIData.mainColor,
-              ),
-            ),
-          ),
+          // Container(
+          //   margin: EdgeInsets.only(top: 10),
+          //   child: Row(
+          //     children: [
+          //       SizedBox(
+          //         width: 20,
+          //       ),
+          //       Text(
+          //         'Upcoming',
+          //         style: TextStyle(
+          //           color: Colors.grey,
+          //           fontSize: 16,
+          //         ),
+          //       ),
+          //       SizedBox(width:5),
+          //       Text(
+          //         "Completed",
+          //         style: TextStyle(
+          //           color: Colors.grey,
+          //           fontSize: 16,
+          //         ),
+          //       ),
+          //        SizedBox(width:7),
+          //       Text(
+          //         "Canceled",
+          //         style: TextStyle(
+          //           color: Colors.grey,
+          //           fontSize: 16,
+          //         ),
+          //       ),
+          //     ],
+          //   ),
+          // ),
+          // Container(
+          //   margin: EdgeInsets.only(right: 260),
+          //   child: Padding(
+          //     padding: EdgeInsets.symmetric(horizontal: 10.0),
+          //     child: Container(
+          //       height: screen_size_height * 0.002,
+          //       width: screen_size_width * 0.4,
+          //       color: UIData.mainColor,
+          //     ),
+          //   ),
+          // ),
           Container(
             height: screen_size_height * 1,
             child: ListView.builder(
@@ -104,7 +144,7 @@ class _Appointment2State extends State<Appointment2> {
                   return Align(
                       child: Container(
                     margin: EdgeInsets.only(top: 20),
-                    height: screen_size_height * 0.43,
+                    height: screen_size_height * 0.3,
                     width: screen_size_width * 0.95,
                     child: Card(
                       shape: RoundedRectangleBorder(
@@ -234,7 +274,7 @@ class _Appointment2State extends State<Appointment2> {
                             ),
                           ),
                           SizedBox(
-                            height: 5,
+                            height: 20,
                           ),
                           Row(
                             children: [
@@ -242,7 +282,7 @@ class _Appointment2State extends State<Appointment2> {
                                 width: 30,
                               ),
                               Container(
-                                  height:23,
+                                  height:30,
                                   width: screen_size_width * 0.3,
                                   child: ElevatedButton(
                                       onPressed: () {},
@@ -257,7 +297,7 @@ class _Appointment2State extends State<Appointment2> {
                                 width: 40,
                               ),
                               Container(
-                                  height: 23,
+                                  height: 30,
                                   width: screen_size_width * 0.3,
                                   child: ElevatedButton(
                                       onPressed: () {},

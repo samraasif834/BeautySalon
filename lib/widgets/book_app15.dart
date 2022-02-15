@@ -17,7 +17,7 @@ class Bookapp15 extends StatelessWidget {
       child: Row(
         children: [
           Container(
-              height: screen_size_height * 0.045,
+              height: 25,
               width: screen_size_width * 0.45,
               decoration: BoxDecoration(
                   color: UIData.mainColor,
@@ -26,22 +26,21 @@ class Bookapp15 extends StatelessWidget {
                   ),
                   borderRadius: BorderRadius.all(Radius.circular(11))),
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                                    Padding(
-                    padding: const EdgeInsets.only(left: 50),
-                  child:Text(
-                    name2,
-                    style: TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold),
-                  ),
+                                    Text(
+                                      name2,
+                                      style: TextStyle(
+                                          color: Colors.white, fontWeight: FontWeight.bold),
                                     )
                 ],
               )),
           SizedBox(
-            width: screen_size_width * 0.05,
+            width: 10,
           ),
           Container(
-              height: screen_size_height * 0.045,
+              height:  25,
               width: screen_size_width * 0.45,
               decoration: BoxDecoration(
                   color: UIData.mainColor,

@@ -1,5 +1,6 @@
 
 
+import 'package:beautysalon/pages/Bottom/bottm.dart';
 import 'package:beautysalon/pages/book_more_appointment.dart';
 import 'package:beautysalon/uidata.dart';
 import 'package:beautysalon/widgets/checkbox.dart';
@@ -321,7 +322,10 @@ SizedBox(height: 30,),
                ),
             ],
           ),
-        ));
+        ),
+        bottomNavigationBar:Navbar(),
+        
+        );
   }
 }
 

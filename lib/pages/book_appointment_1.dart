@@ -1,6 +1,7 @@
 //ss 1
 
 
+import 'package:beautysalon/pages/Bottom/bottm.dart';
 import 'package:beautysalon/pages/book_appointment.dart';
 import 'package:beautysalon/widgets/book_app11.dart';
 import 'package:beautysalon/widgets/book_app12.dart';
@@ -50,55 +51,58 @@ class _Bookapp1State extends State<Bookapp1> {
           ),
         ),
 
-        body: Column(children: [
-          Container(
-            margin: EdgeInsets.only(top: 8,left: 10),
-            child: Bookapp11(name: "Cut & Blow Dry / Ladies", min: "45 min", money: '55.00\$')
-          ),
-          SizedBox(height:screen_size_height*0.02 ,),
-          Container(
-            margin: EdgeInsets.only(top: 8,left: 10),
-            child: Bookapp12(name: "Men\'s Cut", min: "45 min", money: '55.00\$')
-          ),
-          SizedBox(height:screen_size_height*0.03 ,),
-          Container(
-               margin: EdgeInsets.only(top: 8,left: 5),
-            child: Bookapp13(),
-          ),
-           SizedBox(height: screen_size_height*0.02,),
-          Container(child: Text("Choose Specialist",style: TextStyle(
-            color: Colors.black,
-            fontWeight: FontWeight.bold,
-            fontSize: 17,
-          ),),),
-          SizedBox(height: screen_size_height*0.02,),
-          Container(
-             margin: EdgeInsets.only(left: 10),
-            child: Bookapp14(),),
+        body: SingleChildScrollView(
+          child: Column(children: [
             Container(
-             margin: EdgeInsets.only(left: 10,),
-            child: Bookapp15(name1: "10:10-10:40", name2:"10:40-11:00")),
+              margin: EdgeInsets.only(top: 8,left: 10),
+              child: Bookapp11(name: "Cut & Blow Dry / Ladies", min: "45 min", money: '55.00\$')
+            ),
+            // SizedBox(height:screen_size_height*0.02 ,),
+            Container(
+              margin: EdgeInsets.only(top: 8,left: 10),
+              child: Bookapp12(name: "Men\'s Cut", min: "45 min", money: '55.00\$')
+            ),
+            SizedBox(height:screen_size_height*0.03 ,),
+            Container(
+                 margin: EdgeInsets.only(top: 8,left: 5),
+              child: Bookapp13(),
+            ),
              SizedBox(height: screen_size_height*0.02,),
-             Container(
-             margin: EdgeInsets.only(left: 10,),
-            child: Bookapp15(name1: "11:10-11:40", name2: "11:40-12:10")),
+            Container(child: Text("Choose Specialist",style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.bold,
+              fontSize: 17,
+            ),),),
             SizedBox(height: screen_size_height*0.02,),
-             Container(
-             margin: EdgeInsets.only(left: 10,),
-            child: Bookapp15(name1: "12:10-12:40", name2: "12:40-13:10")),
-            SizedBox(height: screen_size_height*0.02,),
-             Container(
-             margin: EdgeInsets.only(left: 10,),
-            child: Bookapp15(name1: "13:10-13:40", name2: "13:40-14:10")),
-            SizedBox(height: screen_size_height*0.02,),
-             Container(
-             margin: EdgeInsets.only(left: 10,),
-            child: Bookapp15(name1: "14:10-14:40", name2: "14:40-15:10")),
-            SizedBox(height: screen_size_height*0.02,),
-             Container(
-             margin: EdgeInsets.only(left: 10,),
-            child: button4(btname: "Book Your Appointment")),
-        ],),
+            Container(
+               margin: EdgeInsets.only(left: 10),
+              child: Bookapp14(),),
+              Container(
+               margin: EdgeInsets.only(left: 10,),
+              child: Bookapp15(name1: "10:10-10:40", name2:"10:40-11:00")),
+               SizedBox(height: screen_size_height*0.02,),
+               Container(
+               margin: EdgeInsets.only(left: 10,),
+              child: Bookapp15(name1: "11:10-11:40", name2: "11:40-12:10")),
+              SizedBox(height: screen_size_height*0.02,),
+               Container(
+               margin: EdgeInsets.only(left: 10,),
+              child: Bookapp15(name1: "12:10-12:40", name2: "12:40-13:10")),
+              SizedBox(height: screen_size_height*0.02,),
+               Container(
+               margin: EdgeInsets.only(left: 10,),
+              child: Bookapp15(name1: "13:10-13:40", name2: "13:40-14:10")),
+              SizedBox(height: screen_size_height*0.02,),
+               Container(
+               margin: EdgeInsets.only(left: 10,),
+              child: Bookapp15(name1: "14:10-14:40", name2: "14:40-15:10")),
+              SizedBox(height: screen_size_height*0.02,),
+               Container(
+               margin: EdgeInsets.only(left: 10,),
+              child: button4(btname: "Book Your Appointment")),
+          ],),
+        ),
+        bottomNavigationBar: Navbar(),
     );
   }
 }
